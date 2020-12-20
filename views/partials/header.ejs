@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SSS</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/blogs.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="blue pullDown">
+            <a href="#" id="nav">SATISH DHAWAN CELL FOR SPACE CLUB</a> 
+            <% if(!currentUser){ %>
+                <a class="pull-right" href="/login" id="nav">ADMIN LOGIN</a>
+            <% }else{ %>
+                <a class="pull-right" href="/logout" id="nav">LOG OUT</a>
+            <% } %>            
+        </div>
+
+        <div class="container" id="flash">
+            <% if(success && success.length>0){ %>
+                <div class="alert alert-success" role="alert"><%= success %></div>
+            <% } %>
+            <% if(error && error.length>0){ %>
+                <div class="alert alert-danger" role="alert"><%= error %></div>
+            <% } %>            
+        </div>

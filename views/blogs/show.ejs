@@ -1,0 +1,18 @@
+<%- include ('../partials/header') -%>
+
+<div class="container show">
+    <div class="thumbnail">
+        <div class="caption-full">
+            <h2><%= blog.name %></h2>
+            <p><%= blog.body %></p>
+            <em><p>Submitted by: <%=blog.author%></p></em>       
+        </div>
+        <% if(currentUser){ %>
+            <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST" style="display: inline;">
+                <button id="del"><i class='fas fa-trash-alt' style="color: red; font-size: 120%; margin-left: 2%;"></i></button>
+            </form>
+        <% } %> 
+    </div> 
+</div>
+
+<%- include ('../partials/footer') -%>

@@ -1,0 +1,29 @@
+<%- include ('../partials/header') -%>
+
+<div class="wrap1">
+    <div class="html1">
+        <div id="form">
+            <form action="/blogs" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="name" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="image" placeholder="Image URL">
+                </div>
+                <div class="form-group" id="description">
+                    <textarea class="form-control" name="body" cols="30" rows="3" placeholder="Body"></textarea>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="author" placeholder="Author">
+                </div>
+                <div class="form-group">
+                    <button class="btn-block" id="add">Submit</button>
+                </div>
+                <hr>     
+            </form>
+            <a href="/blogs" id="back" style="text-decoration: none; color:rgb(250,250,250,0.7);">Go Back  <i class="fa fa-undo"></i></a>
+        </div>
+    </div>
+</div>
+
+<%- include ('../partials/footer') -%>

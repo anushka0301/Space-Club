@@ -1,0 +1,23 @@
+<%- include ('./partials/header') %>
+
+<div class="wrap">
+    <div class="html">
+        <div id="form">
+            <h1 id="n">Hey, Welcome Back!</h1>
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="username" placeholder="Email ID">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" name="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <button class="btn-block" id="sign">SIGN IN</button>
+                </div>  
+                <hr>
+        </div>
+        <a href="/blogs" id="back" style="text-decoration: none; color:rgb(250,250,250,0.7); padding-left:40%;">Go Back  <i class="fa fa-undo"></i></a>
+    </div>
+</div>
+
+<%- include ('./partials/footer') %>

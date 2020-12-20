@@ -1,0 +1,23 @@
+<%- include ('../partials/header') %>
+
+<div class="container index">
+    <% if(currentUser){ %>
+        <a href="/blogs/new"><button id="add" style="margin-top: 2%;">Add new blog</button></a> 
+    <% } %> 
+    <div class="row text-center" style="display: flex; flex-wrap: wrap; padding-top:5%">
+        <% blogs.forEach(function(blog){ %>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <img id="img" src="<%= blog.image %>">
+                    <div class="caption">
+                        <h4><%= blog.name %></h4>
+                        <h7></h7>
+                        <a href="/blogs/<%= blog._id %>" style="text-decoration: none;"><button class="btn-block" id="add">Read More</button></a>
+                    </div>
+                </div>                
+            </div>
+        <% }) %>
+    </div>
+</div>
+
+<%- include ('../partials/footer') %>
