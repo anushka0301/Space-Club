@@ -1,11 +1,3 @@
-div.pullDown
-{
-    font-family: Raleway;
-    font-size: 1vw;
-    margin: 0 auto;
-	padding: 1.5em 3em;
-	text-align: center;
-}
 
 .index
 {
@@ -21,6 +13,13 @@ input:focus{
 
 textarea:focus{
     background-color: antiquewhite;
+}
+
+h2{
+    text-align: center;
+    font-family: Raleway;
+    font-weight: 500;
+    color: #060608;
 }
 
 #add
@@ -66,28 +65,23 @@ textarea:focus{
     z-index: 0;
     cursor: pointer;
 }
+nav.navbar{
+    background: transparent;
+    border: none;
+  }
 
-.blue
-{
-    background:#010103;
-}
-div.pullDown a:before
-{
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0px;
-    top: 0px;
-    content: '';
-    background: #FFF;
-    opacity: 0.3;
-    transition: all 0.3s;
-}
+  .navbar-brand{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5rem !important;
+    padding-left: 1.3em;
+    color: beige !important;
+  }
 
-div.pullDown a:hover:before
-{
-    height: 100%;
-}
+  .navbar-default .navbar-nav>li>a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: beige !important;
+  }
 
 body{
     background: url(https://miro.medium.com/max/2700/1*QS59aHuIEgJoIogixOJ32w.jpeg);
