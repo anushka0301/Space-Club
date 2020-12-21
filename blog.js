@@ -12,7 +12,6 @@ var express              =require("express"),
     methodOverride       =require("method-override");
 
 mongoose.connect("mongodb://localhost:27017/test", {useNewUrlParser:true, useUnifiedTopology:true, useFindAndModify:false, useCreateIndex:true});
-//mongoose.connect("mongodb+srv://user:password@cluster0.xkswv.mongodb.net/yelpcamp?retryWrites=true&w=majority", {useNewUrlParser:true, useUnifiedTopology:true, useFindAndModify:false});
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
@@ -41,7 +40,7 @@ app.use(function(req,res,next){
 
 //LandingPage
 app.get("/", function(req,res){
-    res.render("landing");
+    res.render("index");
 })
 
 //Index

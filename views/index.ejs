@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSS</title>
+    <link rel="shortcut icon" href="logocon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&family=Spartan:wght@900&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/e51dbfb6de.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+       
+        document.onreadystatechange = function() { 
+            if (document.readyState !== "complete") { 
+                document.querySelector("#full-page").style.visibility = "hidden"; 
+                document.querySelector("#loader").style.visibility = "visible"; 
+                
+                 
+            } else { 
+                document.querySelector("#loader").style.display = "none"; 
+                document.querySelector("#full-page").style.visibility = "visible"; 
+                 
+                 
+            } 
+        };   </script>
+</head>
+<body>
+    <div id="loader">
+        <div id="circle1"></div>
+        <div id="circle2"></div>  
+        <div id="circle3"></div> 
+        <div id="circle4"></div>   
+        <div id="circle5"></div>  
+        <ul id="dot-list">
+                <li id="loader-li"><h3 class="dotz" id="dot1">L</h3></li>
+                <li id="loader-li"><h3 class="dotz" id="dot2">O</h3></li>
+                <li id="loader-li"><h3 class="dotz" id="dot3">A</h3></li>
+                <li id="loader-li"><h3 class="dotz" id="dot4">D</h3></li>
+                <li id="loader-li"><h3 class="dotz" id="dot5">I</h3></li>
+                <li id="loader-li"><h3 class="dotz" id="dot6">N</h3></li>
+                <li id="loader-li"><h3 class="dotz" id="dot7">G</h3></li>
+        </ul>
+             
+    </div>
+    <div id="full-page" style="overflow-x: hidden; ">
+    <div class="container-fluid" id="nav-container">
+        <nav class="navbar navbar-expand-sm" style="width: 100%; padding-left: 40px; padding-right: 50px;">
+            
+            <a class="navbar-brand" href="#">
+                <img id="navbar-brand-logo" src="logo1.png" alt="logo" style="width:60px;">
+            </a>
+            <ul class="navbar-nav">              
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)" onclick="scrollWin(0)">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)" onclick="scrollWin(0.95)">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)" onclick="scrollWin(4.1)">ACTIVITIES</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a onclick="myFunction()" class="dropbtn">MEMBERS</a>
+                </li> 
+                <li class="nav-item" id="nav-cross" >
+                    <a onclick="myFunction3()" class="close-nav">
+                        <i class="fa fa-times fa-lg" aria-hidden="true" style="color: white; padding-top: 10px;"></i>
+                    </a>
+                </li>
+            </ul>
+            
+        </nav>
+    </div>
+    <div id="alt-nav">
+        <a class="alt-navbar-brand" href="#">
+            <img id="alt-navbar-brand-logo" src="logo1.png" alt="logo" >
+        </a>
+        <a onclick="myFunction2()" class="toggle-nav">
+            <i id="nav-exp" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div id="myDropdown" class="dropdown-content">
+        <div class="mem"><img src="mem1.jpg" style="height: 200px; border-radius: 15px;" alt=""></div>
+        <div class="mem"><img src="mem2.jpg" style="height: 200px; border-radius: 15px;" alt=""></div>
+        <div class="mem"><img src="mem3.jpg" style="height: 200px; border-radius: 15px;" alt=""></div>
+        <div class="name">Shaun</div>
+        <div class="name">Neel</div>
+        <div class="name">Pranoy</div>
+        <div class="name2">Co-founder</div>
+        <div class="name2">Founding Member</div>
+        <div class="name2">Founding Member</div>
+   </div>
+   <div id="myDropdown2" class="dropdown-content2">
+    <div class="mem"><img src="mem1.jpg" style="height: 120px; border-radius: 15px;" alt=""></div>
+    <div class="name">Shaun</div>
+    <div class="name2">Co-founder</div>
+    <div class="mem"><img src="mem2.jpg" style="height: 120px; border-radius: 15px;" alt=""></div>
+    <div class="name">Neel</div>
+    <div class="name2">Founding Member</div>
+    <div class="mem"><img src="mem3.jpg" style="height: 120px; border-radius: 15px;" alt=""></div>
+    <div class="name">Pranoy</div>
+    <div class="name2">Founding Member</div>
+    <div class="name2">
+        <a onclick="myFunction4()" class="close-nav">
+            <i class="fa fa-times fa-2x" aria-hidden="true" style="color: white; padding-top: 10px;"></i>
+        </a>
+    </div>
+</div>
+   <div id="video" ><iframe id= "videoiframe" style="position: relative; top: 30px; left: 50%; transform: translateX(-50%); z-index: 20;" width="560" height="315" src="https://www.youtube.com/embed/9BbA31noPME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="container0"> 
+        
+        <div class="container1">
+            <div class="parallax1"></div>
+            <div class="parallax1-cover"></div>
+                <a href="#"><div class="heading1" >Satish Dhawan Cell For Space Science</div></a>
+                <div class="heading2">Space Science and Technology Club of Netaji Subhash Engineering College</div>
+            </div>
+        </div>
+        
+        <div class="container2">
+            <p id="product-heading1">ABOUT US</p>  
+            <hr class="divide" id="divide1">
+            
+                <div id="text1">
+                <p id="about-text1" style="color: white;  font-size: 1.2em;">At a glance, the visions of Satish Dhawan Cell for Space Sciences are:</p>
+                <ul style="font-family: 'Work Sans', sans-serif; color: white; font-weight: 300; font-size: 20px;color: white; font-size: 1.2em;">
+                    <li>We are attempting to create a platform which encourages curiosity, innovation and wisdom.</li>
+                    <li>We shall promote interdisciplinary research projects among students relevant to space sciences and technology, attracting talents across many engineering disciplines such as mechanical engineering, computer science engineering, chemical engineering, electrical engineering, electronics engineering and those who pursue Physics, Mathematics.</li>
+                    <li>We hope that most of our planned events shall be public events open to nearly everyone without boundaries.</li>
+                    <li>We shall organize talks, visits and summer and/winter research internships.</li>
+                    <li>We dream to transform ourselves into a society running a publishing house managed by the undergraduates and which shall recognize the scholarly prowess of undergraduates.</li>
+                </ul>
+                <br><br>
+                </div>
+            
+            <div id="img1">
+                <img id="img01" src="logo1.png" alt="" >
+            </div>
+
+            <div id="img2">
+                <img id="img02" src="satish-dhawan.jpg" alt="" >
+            </div> 
+
+            <div id="text2"> 
+                <p id="about-text" style="color: white; font-size: 1.2em;">
+                    Our division is named after Dr. Satish Dhawan, a pioneer in Indian space programs. He was multidimensional and conquered both aerospace engineering and mathematics. For a layman, aerospace engineering and mathematics are two entirely different fields of study, but he had used his training from both to achieve outstanding feats. Actually there are fields of studies which are interdisciplinary and they benefit by overlap of ideas from technical fields and natural sciences. We are attempting to create a platform which encourages brilliance (curiosity, innovation and wisdom). Space Sciences are for every enthusiast.
+                </p>
+            </div> 
+        
+            
+            
+            <div id="text3">
+            <p id="about-text3" style="color: white; width: 70%; position: relative; top: -450px; left: 50%;transform: translateX(-50%);  font-size: 1.2em;">
+                Space Sciences comprise of: <br> </p> 
+            
+            <ul style="font-family: 'Work Sans', sans-serif; color: white; width: 70%; position: relative; top: -450px; left: 50%;transform: translateX(-50%); font-weight: 300; font-size: 20px;color: white;  font-size: 1.2em;">
+                <li>Natural Sciences: Radiophysics, Astronomy, Astrophysics, Atmospheric Sciences, Geoscience, Physics, Mathematics.</li>
+                <li>Technical fields: Scientific computing; Aerospace and Rocketry; Avionics; Instrumentation; Signal Processing; Remote Sensing & Satellite Communication; Satellite System Engineering; Novel material design; Non-conventional Energy Sources.</li>
+                <li>Humanities: Philosophy, Creative arts.</li>
+            </ul>
+            <p id="about-text4" style="color: white; width: 70%; position: relative; top: -450px; left: 50%;transform: translateX(-50%); font-size: 1.2em;">    
+                <br>We are hopeful that we shall be able to attract talent across many engineering disciplines such as mechanical engineering, computer science engineering; chemical engineering; electrical engineering, electronics engineering and those who pursue Physics, Mathematics. The general idea is to include a diverse background for there will be space for anyone!
+            </p>
+            </div>
+            <br><br>
+        
+           
+                <p id="product-heading3" >Guidance For Membership</p>  
+                <hr class="divide" id="divide4"  >
+                <p id="about-text2" >
+                
+                    Most of our events are planned to be public events. We encourage students at all stages and all educational backgrounds from all colleges/universities without boundary; to look for our activities that interest them. They only need to buy tickets for the events. The tickets may be free of cost and may only require filling up forms containing required details. They should feel free to contact us with their queries and members of public relations’ management team shall resolve them.
+                    <br><br>Students who desire to gain experience with one of the teams of sss should only apply for membership. Please contact public relations’ management team with a cover letter and a resume containing introduction, statement of purpose and experiences respectively.
+                    <br><br>Selection to a team should be done in a transparent way. Successful applicant should be best fit for the role offered. If any applicant/member spots unfair practises in any incident, he/she should kindly report the same to esteemed president of sss.
+                    <br><br>There shall be no membership fees. However members may be requested to find funding or contribute as emergency funds till the budget is reached.
+        
+            
+                </p> 
+            
+        </div>
+    </div>
+        
+        <div class="container3">  
+            <div class="parallax2">
+                <br><br><br>
+                
+                    <p id="product-heading2" >ACTIVITIES</p>  
+                    <hr class="divide" id="divide2"  >
+                    
+
+
+                    <!--<div id="demo" class="carousel" style="position: relative; top: 20px;">
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+                    
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-60" src="blog1.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-60" src="blog2.jpg" alt="Second slide">                    
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-60" src="blog3.jpg" alt="Third slide">                    
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-60" src="blog4.jpg" alt="Fourth slide">                    
+                            </div>
+                        </div>      -->
+                            <!-- Left and right controls --> 
+                        <!--    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                    </div>    -->
+            </div>
+           <div class="parallax3-cover">
+                
+            </div>
+        </div>
+
+        <!--
+        <div class="container4">  
+            <div class="parallax3">
+                <br><br><br>
+                <p id="product-heading2">MEMBERS</p>  
+                <hr class="divide" id="divide2">
+
+                <div class="slide hi-slide">
+                    <div class="hi-prev "></div>
+                      <div class="hi-next "></div>
+                      <ul>
+                          <li>
+                          <img src="https://images.pexels.com/photos/1826557/pexels-photo-1826557.jpeg?cs=srgb&dl=attractive-beautiful-beauty-1826557.jpg&fm=jpg" alt="Img 1" /></li>
+                          <li><img src="blog1.jpg" alt="Img 2" /></li>
+                          <li><img src="blog2.jpg" alt="Img 3" /></li>
+                          <li><img src="blog3.jpg" alt="Img 4" /></li>
+                          <li><img src="blog4.jpg" alt="Img 5" /></li>
+                          <li><img src="blog3.jpg" alt="Img 6" /></li>
+                          <li><img src="blog2.jpg" alt="Img 7" /></li>
+                          <li><img src="blog1.jpg" alt="Img 7" /></li>
+                      </ul>
+                  </div>
+            </div>   -->
+            <!--<div class="parallax3-cover">
+                
+            </div>-->
+            
+        
+        <div class="container5">
+            <div class="contact-us">
+                <h4 style="padding-bottom: 5px; padding-top: 15px; color: rgba(245, 245, 245, 0.767); font-family: 'Spartan', sans-serif; font-size: 25px;">Contact Us</h4>
+                <div class="login-box">
+                    <div class="text-box">
+                        <input class="inp" type="text" name="" value="" type="text" required>
+                        <label id="inp-label" for="">Name</label>
+                    </div>
+                    <div class="text-box">
+                        <input class="inp" type="text" name="" value="" type="email" required>
+                        <label id="inp-label" for="">Email</label>
+                    </div>
+                    <div class="text-box">
+                        <textarea class="inp" id="msg" type="message" name="" value="" type="text" rows="3" style="height: 80px; resize: none;" required></textarea>
+                        <label id="msg-label" for="">Your Message</label>
+                    </div>
+                    <input class="botton" type="button" name="" value="Submit">
+                </div>
+            </div>
+            <div class="map" >
+                <iframe id="mapiframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14746.985890227275!2d88.4149326!3d22.4761596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x276c0d30e6be12ea!2sNetaji%20Subhash%20Engineering%20College!5e0!3m2!1sen!2sin!4v1607510239079!5m2!1sen!2sin" width="600" height="355" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="social">
+                <ul class="social-list">
+                    
+                    <li><a href="mailto:nsecspaceclub@gmail.com" target="_blank"><button class="gmail">
+                        <i class="fa fa-envelope" id="gmail" aria-hidden="true"></i>
+                    </button></a></li>
+                    <!--<li><a href="https://github.com/SoumoP" target="_blank"><button class="github">
+                        <i class="fa fa-github" id="github" aria-hidden="true"></i>
+                    </button></a></li>-->
+                    <li><a href="https://twitter.com/sss_nsec" target="_blank"><button class="linkedin">
+                        <i class="fa fa-twitter" id="linkedin" aria-hidden="true"></i>
+                    </button></a></li>
+                    <li><a href="https://www.instagram.com/sss_nsec/" target="_blank"><button class="instagram">
+                        <i class="fa fa-instagram" id="instagram" aria-hidden="true"></i>
+                    </button></a></li>
+                    <!--<li><a href="https://www.facebook.com/soumo.pr" target="_blank"><button class="facebook">
+                        <i class="fa fa-facebook" id="facebook" aria-hidden="true"></i>
+                    </button></a></li>-->
+                </ul>
+            </div>
+
+        </div>
+        <div class="container6">
+            <span>	&#169; SSS NSEC, Kolkata 2020</span>
+
+        </div>
+        
+    </div>
+</div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.hislide.js" ></script>
+<script>
+    $(function () {
+    $(window).on('scroll', function () {
+        if (  $(window).width() > 600 )
+        {
+            if ( $(window).scrollTop() > 250 ) {
+                $('.container-fluid').addClass('active');
+            }
+            else {
+                $('.container-fluid').removeClass('active');
+            }
+        }
+        else
+        {
+            if ($(window).scrollTop() > 10 ) {
+                $('.container-fluid').addClass('active');
+            } else {
+                $('.container-fluid').removeClass('active');
+            }
+        }
+    });
+});
+</script>
+</html>
