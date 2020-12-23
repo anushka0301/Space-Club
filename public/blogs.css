@@ -1,9 +1,40 @@
+@media screen and (max-width: 400px) {
+    .navbar{
+        padding:0px 0px 0px 0px;
+    }
+    #satish{
+        display:none;
+    }
+    #nav{
+        position:relative;
+        right:-90px;
+        padding-top: 20px;
+        margin-top:0;
+    }
+    #form{
+        padding-top:30px;
+    }
+    .html{
+        margin-top: 90px;
+    }
+    .show{
+        margin-top:90px;
+    }
+    .html, .wrap1, #form{
+        width:100% !important;
+        padding: 0px 0px 0px 0px;
+        margin:0px 0px 0px 0px;
+    }
+
+}
 
 .index
 {
     font-family: Raleway;
     margin: 0 auto;
     text-align: center;
+    position:relative;
+    top:40px;
 }
 
 input:focus{
@@ -17,13 +48,34 @@ textarea:focus{
 
 h2{
     text-align: center;
-    font-family: Raleway;
+    font-size: 3em;
+    font-family: 'Anton', sans-serif;
     font-weight: 500;
-    color: #060608;
+    color:beige;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
 }
 
 #add
 {
+    border:none;
+    background: #020107;
+    color:#FFF;
+    font-family: Raleway;
+    padding: 1.5%;
+    font-size: 1em;
+    outline: none;   
+    border-radius: 25px;
+    text-decoration:none ;
+}
+
+#addblog{
+    position:relative;
+    top:30px;
     border:none;
     background: #020107;
     color:#FFF;
@@ -54,35 +106,6 @@ h2{
     text-decoration: none;
 }
 
-#nav
-{
-    color: #FFF;
-    text-decoration: none;
-    font: 1.4vw Raleway;
-    margin: 0px 10px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-}
-nav.navbar{
-    background: transparent;
-    border: none;
-  }
-
-  .navbar-brand{
-    font-family: 'Rubik', sans-serif;
-    font-size: 2.5rem !important;
-    padding-left: 1.3em;
-    color: beige !important;
-  }
-
-  .navbar-default .navbar-nav>li>a{
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    color: beige !important;
-  }
-
 body{
     background: url(https://miro.medium.com/max/2700/1*QS59aHuIEgJoIogixOJ32w.jpeg);
 
@@ -91,6 +114,16 @@ body{
 div.thumbnail{
     background-color:  rgba(201, 199, 212, 0.7);
     border: none;
+
+}
+
+div.thumbnail2{
+    background-color:  rgba(201, 199, 212, 0.7);
+    border: none;
+    border-radius: 10px;
+    padding:8px;
+    background-color: rgb(32, 33, 36);
+    color:beige;
 
 }
 
@@ -134,7 +167,7 @@ div.form-control:focus{
 }
 
 hr{
-	height:2px;
+	height:1px;
 	margin:30px 0 30px 0;
 	background:rgba(255,255,255,.2);
 }
@@ -157,7 +190,7 @@ div.well{
 }
 
 div.show{
-    margin-top: 3%;
+    margin-top: 90px;
 }
 
 .img-responsive{
@@ -178,8 +211,9 @@ div.show{
 }
 
 .html{
+    margin-top: 80px;
 	width:100%;
-	height:100%;
+	height:700px;
 	position:absolute;
 	padding:90px 70px 50px 70px;
 	background:rgba(18, 22, 27, 0.7);
@@ -187,10 +221,11 @@ div.show{
 
 .wrap1{
     width:100%;
-    padding: 1% 5% 10% 5%;
-	margin:auto;
-	max-width:70%;
-	min-height:90%;
+    margin:auto;
+    margin-top:-30px;
+    height:750px;
+	width:50%;
+	min-height:100%;
     position:relative;
     background:rgba(18, 22, 27, 0.7);
 }
@@ -204,10 +239,67 @@ div.show{
 }
 
 div.alert.alert-danger{
-    margin-top: 1.5%;
+    margin-top: 3%;
 }
 
 div.alert.alert-success{
-    margin-top: 1.5%;
+    margin-top: 90px;
     margin-bottom:-1%; 
+}
+
+#nav-container{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    padding-left: 50;
+    padding-right: 50;
+    z-index: 20;
+    height: 80px;
+    width:100%;
+}
+.navbar{
+    padding-left: 0px;
+    height: 80px;
+    width:100%;
+}
+.navbar-nav{
+    position: absolute;
+    right: 0px;
+    padding-right: 100px;
+    transition: 1s;
+}
+.pull-right{
+    margin-top: -18px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 800;
+    font-size: 15px;
+    cursor: pointer;
+}
+.pull-right:hover{
+    transform-origin: center;
+    color: rgb(21,96,189);
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+#goback{
+    margin-top:10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 800;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#satish{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 800;
+    font-size: 25px;
+    cursor: pointer;
+    position:relative;
+    top:25px;
 }

@@ -1,9 +1,35 @@
-<%- include ('../partials/header') -%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SSS</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/blogs.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    </head>
+    <body>
+
+        <div class="container-fluid" id="nav-container">
+            <nav class="navbar navbar-expand-sm" style="width: 100%; padding-left: 40px; padding-right: 50px;">
+                <a class="navbar-brand" id="goback" href="/blogs">
+                   <i class="fas fa-chevron-left"></i><span> Go Back</span>
+                </a>
+            </nav>
+        </div>
 
 <div class="container show">
-    <div class="thumbnail">
+    <div class="thumbnail2">
         <div class="caption-full">
             <h2 ><%= blog.name %></h2>
+            <hr>
             <p><%= blog.body %></p>
             <em><p>Submitted by: <%=blog.author%></p></em>       
         </div>
@@ -14,5 +40,8 @@
         <% } %> 
     </div> 
 </div>
+
+<script src="http://code.jquery.com/jquery-3.4.1.js"></script>    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
 
 <%- include ('../partials/footer') -%>

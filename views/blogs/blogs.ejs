@@ -2,9 +2,9 @@
 
 <div class="container index">
     <% if(currentUser){ %>
-        <a href="/blogs/new"><button id="add" style="margin-top: 2%;">Add new blog</button></a> 
+        <a href="/blogs/new"><button id="addblog" style="margin-top: 2%;">Add new blog</button></a> 
     <% } %> 
-    <div class="row text-center" style="display: flex; flex-wrap: wrap; padding-top:5%">
+    <div class="row text-center" style="display: flex; flex-wrap: wrap; padding-top:50px">
         <% blogs.forEach(function(blog){ %>
             <div class="col-md-4 col-sm-6">
                 <div class="thumbnail">
